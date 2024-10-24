@@ -6,6 +6,12 @@
   <title>Your Name - Portfolio</title>
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/edu_styles.css">
+  <link rel="stylesheet" href="CSS/exp_styles.css">
+  <link rel="stylesheet" href="CSS/skills_styles.css">
+  <link rel="stylesheet" href="CSS/awards_styles.css">
+  <link rel="stylesheet" href="CSS/cert_styles.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,59 +32,231 @@
     <div>
       <h1>About Me</h1>
       <p>
-        I am a passionate web developer with a love for creating innovative and user-friendly digital experiences.
-        With a strong foundation in front-end and back-end development, I enjoy bringing ideas to life through code.
+        A Computer Science graduate with hands-on experience in various programming languages and practical applications in data analysis, automation, and artificial intelligence. 
+        I am passionate about leveraging technology to solve real-world problems, with a specific focus on data-driven solutions and innovative AI methodologies. 
+        I have a strong foundation in software engineering, robotics, and cloud computing, and am committed to continuous learning and professional growth. 
+        I seek opportunities where I can contribute to groundbreaking advancements while furthering my expertise in these areas.
       </p>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <div>
-      <h2>Education</h2>
-      <p>
-        I hold a Bachelor's degree in Computer Science from XYZ University, where I specialized in software development, data structures, and algorithms.
-      </p>
+<!-- Education Section -->
+<section id="education">
+  <div class="education-container">
+    <div class="edu-block" id="highschool">
+      <h3>High School</h3>
+      <p class="short-text">XYZ High School</p>
+      <p class="long-text">I graduated from XYZ High School, where I developed a passion for technology and participated in various programming clubs.</p>
     </div>
-  </section>
+    <div class="edu-block" id="bachelor">
+      <h3>Bachelor's Degree</h3>
+      <p class="short-text">XYZ University</p>
+      <p class="long-text">I earned my Bachelor's degree in Computer Science from XYZ University, specializing in software development and data structures.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <div>
-      <h2>Experience</h2>
-      <p>
-        Over the past 3 years, I have worked as a full-stack developer at ABC Company, leading multiple successful projects and collaborating with cross-functional teams.
-      </p>
+<!-- Experience Section -->
+<section id="experience">
+  <div class="timeline-container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-description="Developed web applications using React and Node.js. Collaborated with cross-functional teams.">
+        <div class="timeline-content">
+          <h3>Software Engineer</h3>
+          <h4>ABC Company</h4>
+          <span class="date">June 2021 - Present</span>
+        </div>
+      </div>
+      <div class="timeline-item" data-description="Worked on various projects, focusing on front-end development using HTML, CSS, and JavaScript.">
+        <div class="timeline-content">
+          <h3>Front-end Developer</h3>
+          <h4>XYZ Solutions</h4>
+          <span class="date">January 2020 - May 2021</span>
+        </div>
+      </div>
+      <div class="timeline-item" data-description="Assisted in developing and maintaining the company's website and internal tools.">
+        <div class="timeline-content">
+          <h3>Web Developer Intern</h3>
+          <h4>DEF Corp</h4>
+          <span class="date">June 2019 - December 2019</span>
+        </div>
+      </div>
+      <div class="timeline-item" data-description="Participated in the development of mobile applications for both iOS and Android platforms.">
+        <div class="timeline-content">
+          <h3>Mobile App Developer Intern</h3>
+          <h4>GHI Technologies</h4>
+          <span class="date">January 2019 - May 2019</span>
+        </div>
+      </div>
+      <div class="timeline-item" data-description="Contributed to various projects, focusing on improving website performance and UX.">
+        <div class="timeline-content">
+          <h3>UX/UI Designer Intern</h3>
+          <h4>JKL Design Studio</h4>
+          <span class="date">June 2018 - December 2018</span>
+        </div>
+      </div>
+      <div class="timeline-item" data-description="Provided tech support and assisted in troubleshooting hardware and software issues.">
+        <div class="timeline-content">
+          <h3>IT Support Technician</h3>
+          <h4>MNO Services</h4>
+          <span class="date">January 2018 - May 2018</span>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="description" id="hover-description"></div>
+  </div>
+</section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div>
-      <h2>Skills</h2>
-      <p>
-        Proficient in HTML, CSS, JavaScript, React, Node.js, and Python. I am also experienced in database management and cloud-based solutions.
-      </p>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills and Abilities</h2>
+  <div class="skill-tree">
+    <div class="skill-node" data-details="Proficient in designing and developing complex software systems across multiple languages: C, C++, C#, Python, Java, Kotlin, X++.">
+      <span>Programming Languages</span>
+      <div class="skill-branch">
+        <div class="skill-node" data-details="HTML, CSS, JavaScript, Vue.js, NUXT.js, Tailwind CSS">
+          <span>Web Development</span>
+        </div>
+        <div class="skill-node" data-details="PHP, SQL, SQL Server">
+          <span>Backend Development and Databases</span>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <div class="skill-node" data-details="Familiar with development tools like Visual Studio, Postman, PyCharm, and GitHub for version control and collaboration.">
+      <span>Integration and APIs</span>
+    </div>
+
+    <div class="skill-node" data-details="Proficient in D365 Finance and Operations, including modules for General Ledger, Accounts Payable, Accounts Receivable, Procurement, Warehousing, and Fixed Assets. Knowledgeable in chain-of-command, event handlers, extensions, business events, custom services, data entities, and various integrations.">
+      <span>Dynamics 365</span>
+    </div>
+
+    <div class="skill-node" data-details="Knowledge of Delivery Management methodologies (e.g., Scrum, Agile, Project Management) and tools like Azure DevOps for version control and CI/CD.">
+      <span>Project Management</span>
+    </div>
+
+    <div class="skill-node" data-details="Experienced in Adobe Photoshop, Adobe Premiere, Adobe Illustrator, and Canva for graphic design and video editing.">
+      <span>Design Tools</span>
+    </div>
+
+    <div class="skill-node" data-details="Proficient in Microsoft 365 Suite, including Word, PowerPoint, and Excel for document creation, presentations, and data analysis.">
+      <span>Productivity Tools</span>
+    </div>
+
+    <div class="skill-node" data-details="Experienced in working with low-level programming, robotics hardware, CNC machines, 3D printers, and research-oriented projects, including Linux, Assembly, Arduino, Matlab, AutoCAD, and SolidWorks.">
+      <span>Other Technologies</span>
+    </div>
+  </div>
+  <div class="skill-description" id="skill-description"></div>
+</section>
+
+
+<!-- Awards and Achievements Section -->
+<section id="awards">
+  <h2>Awards and Achievements</h2>
+  <div class="awards-container">
+    <div class="award-card" id="princess-sumaya-award" data-details="Honored with this prestigious award from HRH Princess Sumaya Al Hassan during my graduation at Princess Sumaya University for Technology, recognizing my exceptional academic performance and contributions to extracurricular activities (2022).">
+      <div class="award-icon award-princess-sumaya">🏆</div>
+      <h3>Princess Sumaya Award For The Most Outstanding Student</h3>
+    </div>
+    <div class="award-card" id="youngest-speaker-award" data-details="Delivered a presentation on robotics and AI, contributing to discussions on emerging AI trends and sharing insights with leading researchers and practitioners at the University of Jordan (2019).">
+      <div class="award-icon award-youngest-speaker">🎤</div>
+      <h3>Youngest Speaker at IEEE AI Conference</h3>
+    </div>
+    <div class="award-card" id="ieee-firefighter-award" data-details="Developed an innovative firefighting robot with my team, which won first place in the national university level IEEE competition, that challenged participants to create functional robotic solutions for fire fighting scenarios (2019).">
+      <div class="award-icon award-ieee-firefighter">🔥</div>
+      <h3>IEEE Fire Fighter Competition</h3>
+    </div>
+    <div class="award-card" id="ahli-fintech-award" data-details="Designed a fintech solution using secure payment via hand band, securing a spot among the finalists and demonstrating innovative problem-solving skills in a competitive environment (2018).">
+      <div class="award-icon award-ahli-fintech">💳</div>
+      <h3>Ahli Fintech Hackathon Finalist</h3>
+    </div>
+    <div class="award-card" id="fll-regional-award" data-details="Successfully trained a team of 10 female students (aged 12-17) with no prior programming or robotics experience, leading them to win first place in mechanical design at the Middle Eastern Regional Robotics Competition (First Lego League Arabia) (2018).">
+      <div class="award-icon award-fll-regional">🤖</div>
+      <h3>First Lego League Middle Eastern Regional Robotics Competition</h3>
+    </div>
+    <div class="award-card" id="programming-award" data-details="Earned first place in the programming category at the 11th national robotics competition (First Lego League) for programming a self-driving robot utilizing PID control techniques (2016).">
+      <div class="award-icon award-programming">🖥️</div>
+      <h3>Programming Award at First Lego League National Robotics Competition</h3>
+    </div>
+    <div class="award-card" id="f1-for-schools-award" data-details="Established the first 'F1 for Schools' team in my school, successfully guiding the team to win the Best Research Award at the regional competition (2016).">
+      <div class="award-icon award-f1-for-schools">🏎️</div>
+      <h3>Founder of First “F1 for Schools” Team</h3>
+    </div>
+    <div class="award-card" id="jubilee-competition-award" data-details="Achieved 3rd place in the web development category at the Jubilee Innovative Design Competition for schools in the Middle East, recognized for developing a website using HTML, CSS, and JavaScript (2016).">
+      <div class="award-icon award-jubilee-competition">🌐</div>
+      <h3>Jubilee Innovative Design Competition</h3>
+    </div>
+  </div>
+  <div class="award-description" id="award-description"></div>
+</section>
+
+
+<!-- Certifications and Training Section -->
+<section id="certifications">
+  <h2>Certifications and Training</h2>
+  <div class="badges-container">
+    <div class="badge" data-title="Microsoft Certified: Dynamics 365 Fundamentals (ERP) (MB-920)" data-date="2024" data-skills="Covers the fundamentals of Microsoft Dynamics 365 ERP solutions, including core functionalities and applications, designed for professionals looking to improve business operations.">
+      <span class="badge-icon">🎖️</span>
+      <span class="badge-label">Dynamics 365 Fundamentals</span>
+    </div>
+    <div class="badge" data-title="Amazon Campus Mentorship Series" data-date="2021" data-skills="A 6-month intensive program enhancing skills in software development and cloud computing, gaining insights from industry professionals and expanding my professional network.">
+      <span class="badge-icon">🛡️</span>
+      <span class="badge-label">Amazon Mentorship</span>
+    </div>
+    <div class="badge" data-title="Microsoft Skills Lab AI Apprenticeship" data-date="2021" data-skills="Selected from a competitive pool of 40 applicants for a prestigious apprenticeship focused on Artificial Intelligence, developing advanced AI projects and collaborating with experts in the field.">
+      <span class="badge-icon">🤖</span>
+      <span class="badge-label">AI Apprenticeship</span>
+    </div>
+    <div class="badge" data-title="Microsoft Azure Fundamentals (AZ-900)" data-date="2021" data-skills="Introduces core concepts, services, security, and compliance of Microsoft Azure, equipping participants with essential knowledge about its functionality and value.">
+      <span class="badge-icon">☁️</span>
+      <span class="badge-label">Azure Fundamentals</span>
+    </div>
+    <div class="badge" data-title="Certified Ethical Hacker (CEH)" data-date="2021" data-skills="Focuses on ethical hacking techniques and tools, teaching participants to identify vulnerabilities in systems and networks to enhance skills in penetration testing and cybersecurity.">
+      <span class="badge-icon">🔒</span>
+      <span class="badge-label">Ethical Hacker</span>
+    </div>
+    <div class="badge" data-title="Cisco Certified Network Associate (CCNA)" data-date="2020" data-skills="Validates skills in managing and troubleshooting networks, covering key concepts such as IP addressing, routing, switching, and security.">
+      <span class="badge-icon">📡</span>
+      <span class="badge-label">CCNA</span>
+    </div>
+    <div class="badge" data-title="Accredited Robotics Competitions Judge Training" data-date="2018" data-skills="Prepares individuals to judge robotics competitions, focusing on evaluation criteria and best practices to provide fair and constructive feedback.">
+      <span class="badge-icon">🤖</span>
+      <span class="badge-label">Judge Training</span>
+    </div>
+  </div>
+  <div class="tooltip" id="tooltip"></div>
+</section>
+
+
 
   <!-- Contact Me Section -->
   <section id="contact">
     <div>
       <h2>Contact Me</h2>
       <p>
-        Feel free to reach out for any opportunities or collaborations! Email me at: <strong>youremail@example.com</strong>
+        Feel free to reach out for any opportunities or collaborations! 
+        Email me at: <strong>jude.barakat@outlook.com</strong>
+        Linked in: <strong>judebarakat99</strong>
+        GitHub: <strong>judebarakat</strong>
       </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 Your Name</p>
+    <p>© 2024 Jude Barakat</p>
   </footer>
 
   <!-- Link to external JavaScript -->
   <script src="JS/script.js"></script>
-  
+  <script src="JS/edu_script.js"></script>
+  <script src="JS/exp_script.js"></script>
+  <script src="JS/skills_script.js"></script>
+  <script src="JS/awards_script.js"></script>
+  <script src="JS/cert_script.js"></script>
+
 </body>
 </html>
