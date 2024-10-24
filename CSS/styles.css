@@ -87,6 +87,16 @@ body {
     background-color: #2196F3;
     color: white;
   }
+
+  #awards {
+    background-color: #ab4fcf;
+    color: white;
+  }
+
+  #certifications {
+    background-color: #bb33a4;
+    color: white;
+  }
   
   #contact {
     background-color: #673AB7;
