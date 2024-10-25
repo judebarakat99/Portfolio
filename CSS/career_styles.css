@@ -1,0 +1,36 @@
+#career h2 {
+    margin-bottom: 50px;
+}
+
+.career-container {
+    margin: 20px 0;
+    text-align: center; /* Center the text */
+  }
+  
+  /* Text styling */
+  .career-text {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .career-text h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+  
+  .career-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design: Adjust text sizes on small screens */
+  @media (max-width: 767px) {
+    .career-text h2 {
+      font-size: 24px; /* Smaller heading for small screens */
+    }
+  
+    .career-text p {
+      font-size: 14px; /* Smaller paragraph text for small screens */
+    }
+  }
+  

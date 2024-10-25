@@ -1,55 +1,45 @@
 #certifications {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .badges-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
-  }
-  
-  .badge {
-    position: relative;
-    display: inline-block;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    flex: 1 1 calc(30% - 15px); /* Responsive sizing */
-  }
-  
-  .badge:hover {
-    transform: scale(1.05); /* Hover effect */
-  }
-  
-  .badge-icon {
-    font-size: 30px;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .badge-label {
-    font-weight: bold;
-  }
-  
-  .tooltip {
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    display: none; /* Hidden by default */
-    z-index: 10;
-    white-space: nowrap; /* Prevent line breaks */
-  }
-  
-  .badge:hover .tooltip {
-    display: block; /* Show tooltip on hover */
-  }
-  
+  padding: 20px;
+  background-color: #ffa530;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10 px;
+  justify-content: space-between;
+  width:80%;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+.certification-card {
+  position: relative;
+  margin: 20px auto;
+  background-color: #18801f;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 400px;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.details {
+  display: none; /* Hide details by default */
+  margin-top: 10px;
+  background-color: 333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.certification-card:hover .details {
+  display: block; /* Show details on hover */
+}
