@@ -52,6 +52,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 80%; /* Set width to 80% of the page */
     max-width: 800px; /* Max width for better appearance */
+    color:black;
+    text-align: left;
   }
   
   
