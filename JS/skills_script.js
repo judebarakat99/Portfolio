@@ -1,26 +1,35 @@
-// Function to display details on skill node click
-const skillNodes = document.querySelectorAll('.skill-node');
-const skillDescription = document.getElementById('skill-description');
+document.addEventListener("DOMContentLoaded", function () {
+  const skillMeters = document.querySelectorAll('.meter');
 
-skillNodes.forEach(node => {
-  node.addEventListener('click', () => {
-    // Toggle the active state
-    node.classList.toggle('active');
-    
-    // Hide description for all nodes except the clicked one
-    skillNodes.forEach(n => {
-      if (n !== node) {
-        n.classList.remove('active');
+  // Function to animate skill meters when they come into view
+  function animateSkillMeters() {
+    skillMeters.forEach((meter) => {
+      const skillLevel = meter.getAttribute('data-skill');
+      meter.querySelector('.fill').style.width = skillLevel + '%';
+    });
+  }
+
+  // Check if skill meters are in view
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 && rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Animate on scroll
+  window.addEventListener('scroll', function () {
+    skillMeters.forEach((meter) => {
+      if (isInViewport(meter)) {
+        animateSkillMeters();
       }
     });
-
-    // Display the details of the clicked node
-    const details = node.getAttribute('data-details');
-    if (node.classList.contains('active')) {
-      skillDescription.innerText = details;
-      skillDescription.style.display = 'block'; // Show description
-    } else {
-      skillDescription.style.display = 'none'; // Hide description if not active
-    }
   });
+
+  // Initial animation when page is loaded
+  if (isInViewport(skillMeters[0])) {
+    animateSkillMeters();
+  }
 });
