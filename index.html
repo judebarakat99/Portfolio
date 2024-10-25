@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Jude Barakat CPD Portfolio</title>
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/edu_styles.css">
@@ -11,26 +11,35 @@
   <link rel="stylesheet" href="CSS/skills_styles.css">
   <link rel="stylesheet" href="CSS/awards_styles.css">
   <link rel="stylesheet" href="CSS/cert_styles.css">
+  <link rel="stylesheet" href="CSS/about_styles.css">
+  <link rel="stylesheet" href="CSS/career_styles.css">
+  <link rel="stylesheet" href="CSS/projects_styles.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header Navigation -->
-  <header>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact Me</a>
-    </nav>
-  </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <div>
-      <h1>About Me</h1>
+<!-- Header Navigation -->
+<header>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+</header>
+
+
+<!-- About Me Section -->
+<section id="about">
+  <h1>About Me</h1>
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="Images/myPic.jpeg" alt="My Photo" />
+    </div>
+    <div class="about-text">
       <p>
         A Computer Science graduate with hands-on experience in various programming languages and practical applications in data analysis, automation, and artificial intelligence. 
         I am passionate about leveraging technology to solve real-world problems, with a specific focus on data-driven solutions and innovative AI methodologies. 
@@ -38,73 +47,143 @@
         I seek opportunities where I can contribute to groundbreaking advancements while furthering my expertise in these areas.
       </p>
     </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- Education Section -->
 <section id="education">
-  <div class="education-container">
-    <div class="edu-block" id="highschool">
-      <h3>High School</h3>
-      <p class="short-text">XYZ High School</p>
-      <p class="long-text">I graduated from XYZ High School, where I developed a passion for technology and participated in various programming clubs.</p>
-    </div>
-    <div class="edu-block" id="bachelor">
-      <h3>Bachelor's Degree</h3>
-      <p class="short-text">XYZ University</p>
-      <p class="long-text">I earned my Bachelor's degree in Computer Science from XYZ University, specializing in software development and data structures.</p>
-    </div>
-  </div>
+  <h2>Education</h2>
+      <div class="education-container">
+        <div id = "education-headings">
+          <div class="education-block" id="high-school">
+            <h3>High School</h3>
+            <p>Graduated: 2017</p>
+          </div>
+          <div class="education-block" id="bachelor-degree">
+            <h3>Bachelor's Degree</h3>
+            <p>Graduated: 2021</p>
+          </div>
+        </div>
+        <!-- Details div that will be shown or hidden -->
+        <div id="education-details" class="education-details"></div>
+      </div>
 </section>
+
 
 <!-- Experience Section -->
 <section id="experience">
   <div class="timeline-container">
     <h2>Experience</h2>
     <div class="timeline">
-      <div class="timeline-item" data-description="Developed web applications using React and Node.js. Collaborated with cross-functional teams.">
-        <div class="timeline-content">
-          <h3>Software Engineer</h3>
-          <h4>ABC Company</h4>
-          <span class="date">June 2021 - Present</span>
+      
+      <div class="timeline-item">
+        <div class="timeline-content accordion">
+          <h3>Junior Dynamics 365 Finance and Operations Consultant</h3>
+          <h4>Digital Gates</h4>
+          <span class="date">Feb 2024 - Present</span>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>Assisted in implementing and configuring Dynamics 365 Finance and Operations (D365 F&O) to streamline financial and supply chain processes for clients across various industries.</li>
+            <li>Participated in requirements gathering sessions, translating business needs into technical solutions within D365 F&O.</li>
+            <li>Configured finance modules, including General Ledger (GL), Accounts Payable (AP), Accounts Receivable (AR), Cash and Bank Management, and Fixed Assets, to optimize financial operations.</li>
+            <li>Collaborated with senior consultants and cross-functional teams to develop workflows and customize user interfaces.</li>
+            <li>Developed custom solutions by writing business logic in X++ and extending the functionality of D365 F&O apps.</li>
+            <li>Created and modified F&O app dashboards and workspaces using tools like SQL Server.</li>
+            <li>Managed and optimized application lifecycle management (ALM) processes using Azure DevOps, Lifecycle Services (LCS), and GitHub.</li>
+            <li>Ensured system security, performance optimization, and compliance with client-specific permission policies.</li>
+          </ul>
         </div>
       </div>
-      <div class="timeline-item" data-description="Worked on various projects, focusing on front-end development using HTML, CSS, and JavaScript.">
-        <div class="timeline-content">
-          <h3>Front-end Developer</h3>
-          <h4>XYZ Solutions</h4>
-          <span class="date">January 2020 - May 2021</span>
+
+      <div class="timeline-item">
+        <div class="timeline-content accordion">
+          <h3>Teaching Assistant</h3>
+          <h4>Al Hussein Technical University</h4>
+          <span class="date">Oct 2022 - Jul 2023</span>
+        </div>
+        <div class="panel">
+          <p>Designed and implemented coursework for 5 courses, focusing on programming, database management, and web development.</p>
+          <p>Created an automated evaluation system utilized by over 70 educators, reducing workload by 50%.</p>
+          <p>Managed and mentored 225 students across various disciplines.</p>
         </div>
       </div>
-      <div class="timeline-item" data-description="Assisted in developing and maintaining the company's website and internal tools.">
-        <div class="timeline-content">
-          <h3>Web Developer Intern</h3>
-          <h4>DEF Corp</h4>
-          <span class="date">June 2019 - December 2019</span>
+
+      <div class="timeline-item">
+        <div class="timeline-content accordion">
+          <h3>Software Development Engineering Intern</h3>
+          <h4>Amazon</h4>
+          <span class="date">Sep 2021 - Apr 2022</span>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>Built backend systems for Amazon UAE’s mobile recharge website, using Java and Kotlin.</li>
+            <li>Developed solutions for troubleshooting payment errors, increasing operational efficiency.</li>
+            <li>Contributed to the launch of Amazon in two new marketplaces, integrating secure payment methods for wider user access.</li>
+            <li>Gained knowledge of cloud infrastructure and deployment in large-scale web environments.</li>
+          </ul>
         </div>
       </div>
-      <div class="timeline-item" data-description="Participated in the development of mobile applications for both iOS and Android platforms.">
-        <div class="timeline-content">
-          <h3>Mobile App Developer Intern</h3>
-          <h4>GHI Technologies</h4>
-          <span class="date">January 2019 - May 2019</span>
+      
+      <div class="timeline-item">
+        <div class="timeline-content accordion">
+          <h3>Robotics Trainer</h3>
+          <h4>National Institute for Robotics and Technology</h4>
+          <span class="date">Nov 2018 - Feb 2022</span>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>Developed and led a curriculum on robotics and programming, training over 150 students in advanced electronics and AI concepts.</li>
+            <li>Supervised teams participating in national and international robotics competitions.</li>
+            <li>Collaborated on the development and maintenance of the institute’s commercial website.</li>
+          </ul>
         </div>
       </div>
-      <div class="timeline-item" data-description="Contributed to various projects, focusing on improving website performance and UX.">
-        <div class="timeline-content">
-          <h3>UX/UI Designer Intern</h3>
-          <h4>JKL Design Studio</h4>
-          <span class="date">June 2018 - December 2018</span>
+      
+
+      <div class="timeline-item">
+        <div class="timeline-content accordion">
+          <h3>Website Development Intern</h3>
+          <h4>Jordan Open Source Association</h4>
+          <span class="date">Aug 2020 - Oct 2020</span>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>Designed and implemented front-end interfaces for a digital safety platform using HTML, Tailwind CSS, and NUXT.js.</li>
+            <li>Conducted user testing and feedback analysis to enhance UI/UX which improved overall user satisfaction.</li>
+            <li>Worked in a collaborative open-source environment, enhancing knowledge of digital privacy frameworks.</li>
+          </ul>
         </div>
       </div>
-      <div class="timeline-item" data-description="Provided tech support and assisted in troubleshooting hardware and software issues.">
-        <div class="timeline-content">
-          <h3>IT Support Technician</h3>
-          <h4>MNO Services</h4>
-          <span class="date">January 2018 - May 2018</span>
-        </div>
-      </div>
+    
+  </div>
+</section>
+
+<!-- Carer Objectives Section -->
+<section id="career">
+  <div class="career-container">
+    <div class="career-text">
+      <h2>Career Objectives and Research Interests</h2>
+      <p>
+        I aim to leverage my extensive background in software development, artificial intelligence, and robotics to drive innovation in the tech industry. 
+        My primary career objective is to develop advanced solutions that optimize business processes, enhance automation, and improve user experiences, 
+        particularly in the areas of data analysis, AI-driven applications, and enterprise resource planning (ERP) systems.
+      </p>
+      <br>
+      <p>
+        I am particularly interested in the intersection of artificial intelligence and automation within real-world applications, such as speech recognition 
+        and robotics, and how they can be integrated into business operations through platforms like Dynamics 365. My research interests also focus on deep 
+        learning, human-robot interaction, and the development of smart systems that can automate complex tasks. I am passionate about continuing to explore 
+        how AI and robotics can be used to solve critical challenges in industries such as finance, healthcare, and education.
+      </p>
+      <br>
+      <p>
+        I seek opportunities where I can contribute to impactful projects, collaborate with cross-functional teams, and continue advancing my skills in areas 
+        such as AI, robotics, and ERP systems to help create cutting-edge technological solutions. This is my passion, and I strive to reach it wheather through
+        industry or academia and research.
+      </p>
     </div>
-    <div class="description" id="hover-description"></div>
   </div>
 </section>
 
@@ -112,45 +191,108 @@
 <!-- Skills Section -->
 <section id="skills">
   <h2>Skills and Abilities</h2>
-  <div class="skill-tree">
-    <div class="skill-node" data-details="Proficient in designing and developing complex software systems across multiple languages: C, C++, C#, Python, Java, Kotlin, X++.">
-      <span>Programming Languages</span>
-      <div class="skill-branch">
-        <div class="skill-node" data-details="HTML, CSS, JavaScript, Vue.js, NUXT.js, Tailwind CSS">
-          <span>Web Development</span>
-        </div>
-        <div class="skill-node" data-details="PHP, SQL, SQL Server">
-          <span>Backend Development and Databases</span>
-        </div>
+  <div class="skill-meters">
+    <div class="skill">
+      <h3 for="programming">Programming Languages</h3>
+      <div class="meter" data-skill="90">
+        <div class="fill"></div>
       </div>
+      <p>Proficient in designing and developing complex software systems across multiple languages: C, C++, C#, Python, Java, Kotlin, X++</p>
     </div>
-
-    <div class="skill-node" data-details="Familiar with development tools like Visual Studio, Postman, PyCharm, and GitHub for version control and collaboration.">
-      <span>Integration and APIs</span>
+    <div class="skill">
+      <h3 for="web-dev">Web Development</h3>
+      <div class="meter" data-skill="85">
+        <div class="fill"></div>
+      </div>
+      <p>Developed front-end interfaces for responsive websites and applications using HTML, CSS, JavaScript, Vue.js, NUXT.js, Tailwind CSS</p>
     </div>
-
-    <div class="skill-node" data-details="Proficient in D365 Finance and Operations, including modules for General Ledger, Accounts Payable, Accounts Receivable, Procurement, Warehousing, and Fixed Assets. Knowledgeable in chain-of-command, event handlers, extensions, business events, custom services, data entities, and various integrations.">
-      <span>Dynamics 365</span>
+    <div class="skill">
+      <h3 for="backend-dev">Backend Development</h3>
+      <div class="meter" data-skill="80">
+        <div class="fill"></div>
+      </div>
+      <p>Skilled in database design and management with PHP, SQL, and SQL Server</p>
     </div>
-
-    <div class="skill-node" data-details="Knowledge of Delivery Management methodologies (e.g., Scrum, Agile, Project Management) and tools like Azure DevOps for version control and CI/CD.">
-      <span>Project Management</span>
+    <div class="skill">
+      <h3 for="integration">Integration and APIs</h3>
+      <div class="meter" data-skill="75">
+        <div class="fill"></div>
+      </div>
+      <p>Familiar with development tools like Visual Studio, Postman, PyCharm, and GitHub for version control and collaboration</p>
     </div>
-
-    <div class="skill-node" data-details="Experienced in Adobe Photoshop, Adobe Premiere, Adobe Illustrator, and Canva for graphic design and video editing.">
-      <span>Design Tools</span>
+    <div class="skill">
+      <h3 for="dynamics365">Dynamics 365</h3>
+      <div class="meter" data-skill="70">
+        <div class="fill"></div>
+      </div>
+      <p>Proficient in D365 Finance and Operations, including various modules and integrations.</p>
     </div>
-
-    <div class="skill-node" data-details="Proficient in Microsoft 365 Suite, including Word, PowerPoint, and Excel for document creation, presentations, and data analysis.">
-      <span>Productivity Tools</span>
-    </div>
-
-    <div class="skill-node" data-details="Experienced in working with low-level programming, robotics hardware, CNC machines, 3D printers, and research-oriented projects, including Linux, Assembly, Arduino, Matlab, AutoCAD, and SolidWorks.">
-      <span>Other Technologies</span>
+    <div class="skill">
+      <h3 for="project-mgmt">Project Management</h3>
+      <div class="meter" data-skill="70">
+        <div class="fill"></div>
+      </div>
+      <p>Knowledge of Delivery Management methodologies (e.g., Scrum, Agile) and tools like Azure DevOps.</p>
     </div>
   </div>
-  <div class="skill-description" id="skill-description"></div>
 </section>
+
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <div class="proj-img-div">
+              <img src="Images/firefighter.png" alt="Firefighting Robot" class="project-image left">
+        </div>
+        <div class="project-text">
+            <h3>Firefighting Robot</h3>
+            <p>Developed a robot using an Arduino controller and electrical wiring designed to assist in fire emergency situations. This robot participated in the IEEE Firefighter Competition, demonstrating its capability to navigate hazardous environments and execute firefighting tasks effectively.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img-div">
+        <img src="Images/EV3.png" alt="Balancing Robot" class="project-image right">
+        </div>
+        <div class="project-text">
+            <h3>Balancing Robot</h3>
+            <p>Created a robot using the LEGO Mindstorms EV3 kit aimed at promoting interest in robotics. This robot balances on a rope and attempts to drop a ball into a cup, serving as a tool to enhance accuracy and coordination skills for the operator.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img-div">
+        <img src="Images/eggColoring.jpg" alt="Easter Egg Coloring Robot" class="project-image left">
+        </div>
+        <div class="project-text">
+            <h3>Easter Egg Coloring Robot</h3>
+            <p>Engineered an egg-coloring robot as a themed activity for Easter. This project showcased creativity and technical skills, enabling efficient and colorful decoration of eggs for the holiday celebration.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img-div">
+        <img src="Images/FLL.jpeg" alt="Self-Driving Robot" class="project-image right">
+        </div>
+        <div class="project-text">
+            <h3>Self-Driving Robot for National Robotics Competition</h3>
+            <p>Designed and built a self-driving robot for the National Robotics Competition. This robot utilized advanced sensors and programming techniques to navigate autonomously, completing tasks and challenges set by the competition.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img-div">
+        <img src="Images/GradProj3.png" alt="Speech to Sign Language Interpreter" class="project-image left">
+        </div>
+        <div class="project-text">
+            <h3>Speech to Sign Language Interpreter System</h3>
+            <p>Developed a Speech to Sign Language Interpreter System that translates spoken language into sign language gestures. This project aimed to bridge communication gaps for the hearing-impaired community, utilizing machine learning algorithms for accurate translation.</p>
+        </div>
+    </div>
+</section>
+
 
 
 <!-- Awards and Achievements Section -->
@@ -197,50 +339,96 @@
 <!-- Certifications and Training Section -->
 <section id="certifications">
   <h2>Certifications and Training</h2>
-  <div class="badges-container">
-    <div class="badge" data-title="Microsoft Certified: Dynamics 365 Fundamentals (ERP) (MB-920)" data-date="2024" data-skills="Covers the fundamentals of Microsoft Dynamics 365 ERP solutions, including core functionalities and applications, designed for professionals looking to improve business operations.">
-      <span class="badge-icon">🎖️</span>
-      <span class="badge-label">Dynamics 365 Fundamentals</span>
+  <div id = "cards">
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Microsoft Certified: Dynamics 365 Fundamentals (ERP) (MB-920)</h3>
+            <div class="details">
+                <p><strong></strong>Completed: 2024</strong></p>
+                <p>Covers the fundamentals of Microsoft Dynamics 365 ERP solutions, including core functionalities and applications, designed for professionals looking to improve business operations.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Amazon Campus Mentorship Series" data-date="2021" data-skills="A 6-month intensive program enhancing skills in software development and cloud computing, gaining insights from industry professionals and expanding my professional network.">
-      <span class="badge-icon">🛡️</span>
-      <span class="badge-label">Amazon Mentorship</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Amazon Campus Mentorship Series</h3>
+            <div class="details">
+                <p><strong>Completed: 2021</strong></p>
+                <p>A 6-month intensive program enhancing skills in software development and cloud computing, gaining insights from industry professionals and expanding my professional network.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Microsoft Skills Lab AI Apprenticeship" data-date="2021" data-skills="Selected from a competitive pool of 40 applicants for a prestigious apprenticeship focused on Artificial Intelligence, developing advanced AI projects and collaborating with experts in the field.">
-      <span class="badge-icon">🤖</span>
-      <span class="badge-label">AI Apprenticeship</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Microsoft Skills Lab AI Apprenticeship</h3>
+            <div class="details">
+                <p><strong>Completed: 2021</strong></p>
+                <p>Selected from a competitive pool of 40 applicants for a prestigious apprenticeship focused on Artificial Intelligence, developing advanced AI projects and collaborating with experts in the field.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Microsoft Azure Fundamentals (AZ-900)" data-date="2021" data-skills="Introduces core concepts, services, security, and compliance of Microsoft Azure, equipping participants with essential knowledge about its functionality and value.">
-      <span class="badge-icon">☁️</span>
-      <span class="badge-label">Azure Fundamentals</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+            <div class="details">
+                <p><strong>Completed: 2021</strong></p>
+                <p>Introduces core concepts, services, security, and compliance of Microsoft Azure, equipping participants with essential knowledge about its functionality and value.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Certified Ethical Hacker (CEH)" data-date="2021" data-skills="Focuses on ethical hacking techniques and tools, teaching participants to identify vulnerabilities in systems and networks to enhance skills in penetration testing and cybersecurity.">
-      <span class="badge-icon">🔒</span>
-      <span class="badge-label">Ethical Hacker</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Certified Ethical Hacker (CEH)</h3>
+            <div class="details">
+                <p><strong>Completed: 2021</strong></p>
+                <p>Focuses on ethical hacking techniques and tools, teaching participants to identify vulnerabilities in systems and networks to enhance skills in penetration testing and cybersecurity.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Cisco Certified Network Associate (CCNA)" data-date="2020" data-skills="Validates skills in managing and troubleshooting networks, covering key concepts such as IP addressing, routing, switching, and security.">
-      <span class="badge-icon">📡</span>
-      <span class="badge-label">CCNA</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Cisco Certified Network Associate (CCNA)</h3>
+            <div class="details">
+                <p><strong>Completed: 2020</strong></p>
+                <p>Validates skills in managing and troubleshooting networks, covering key concepts such as IP addressing, routing, switching, and security.</p>
+            </div>
+        </div>
     </div>
-    <div class="badge" data-title="Accredited Robotics Competitions Judge Training" data-date="2018" data-skills="Prepares individuals to judge robotics competitions, focusing on evaluation criteria and best practices to provide fair and constructive feedback.">
-      <span class="badge-icon">🤖</span>
-      <span class="badge-label">Judge Training</span>
+
+    <div class="certification-card">
+        <div class="card-content">
+            <h3>Accredited Robotics Competitions Judge Training</h3>
+            <div class="details">
+                <p><strong>Completed: 2018</strong></p>
+                <p>Prepares individuals to judge robotics competitions, focusing on evaluation criteria and best practices to provide fair and constructive feedback.</p>
+            </div>
+        </div>
     </div>
   </div>
-  <div class="tooltip" id="tooltip"></div>
 </section>
 
 
 
   <!-- Contact Me Section -->
   <section id="contact">
-    <div>
+    <div id="contact-content">
       <h2>Contact Me</h2>
       <p>
         Feel free to reach out for any opportunities or collaborations! 
-        Email me at: <strong>jude.barakat@outlook.com</strong>
-        Linked in: <strong>judebarakat99</strong>
-        GitHub: <strong>judebarakat</strong>
+      </p>
+      <p>
+        Email me at: <strong><a href="mailto:jude.barakat@outlook.com">jude.barakat@outlook.com</a></strong>
+      </p>
+      <p>
+        Linked in: <strong><a href="https://www.linkedin.com/in/judebarakat99?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">judebarakat99</a></strong>
+      </p>
+      <p>
+        GitHub: <strong><a href="https://github.com/judebarakat99">judebarakat</a></strong>
       </p>
     </div>
   </section>
