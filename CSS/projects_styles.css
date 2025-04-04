@@ -4,7 +4,7 @@
     background-color: #cc2e5b;
 }
 
-#projects h2 {
+/* #projects h2 {
     margin-bottom: 100px;
 }
 
@@ -21,9 +21,9 @@
 
 .project-card:nth-child(even) {
     flex-direction: row-reverse; /* Reverse order for even cards */
-}
 
-.proj-img-div {
+
+/* .proj-img-div {
     width: 30%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -41,7 +41,7 @@
 
 .project-text h3 {
     margin-top: 0;
-}
+} 
 
 .project-image.left {
     border-radius: 5px 0 0 5px;
@@ -49,4 +49,48 @@
 
 .project-image.right {
     border-radius: 0 5px 5px 0;
+}  */
+
+
+#projects {
+    padding: 50px 10%;
+    background-color: #cc2e5b;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #2e9acc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 80%;
+    height: 200px;
+    margin: 10%;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-top: 0;
 }

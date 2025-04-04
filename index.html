@@ -17,403 +17,497 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
 
-<!-- Header Navigation -->
-<header>
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact Me</a>
-  </nav>
-</header>
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#career">Career Objectives</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
 
 
-<!-- About Me Section -->
-<section id="about">
-  <h1>About Me</h1>
-  <div class="about-container">
-    <div class="about-photo">
-      <img src="Images/myPic.jpeg" alt="My Photo" />
+  <!-- About Me Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="Images/myPic.jpeg" alt="My Photo" />
+      </div>
+      <div class="about-text">
+        <p>
+          A Computer Science graduate and Robotics postgraduate with hands-on experience in various programming languages and practical applications in data analysis, automation, and artificial intelligence. 
+          I am passionate about leveraging technology to solve real-world problems, with a specific focus on data-driven solutions and innovative AI methodologies. 
+          I have a strong foundation in software engineering, robotics, and cloud computing, and am committed to continuous learning and professional growth. 
+          I seek opportunities where I can contribute to groundbreaking advancements while furthering my expertise in these areas.
+        </p>
+      </div>
     </div>
-    <div class="about-text">
-      <p>
-        A Computer Science graduate with hands-on experience in various programming languages and practical applications in data analysis, automation, and artificial intelligence. 
-        I am passionate about leveraging technology to solve real-world problems, with a specific focus on data-driven solutions and innovative AI methodologies. 
-        I have a strong foundation in software engineering, robotics, and cloud computing, and am committed to continuous learning and professional growth. 
-        I seek opportunities where I can contribute to groundbreaking advancements while furthering my expertise in these areas.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Education Section -->
-<section id="education">
-  <h2>Education</h2>
-      <div class="education-container">
-        <div id = "education-headings">
-          <div class="education-block" id="high-school">
-            <h3>High School</h3>
-            <p>Graduated: 2017</p>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+        <div class="education-container">
+          <div id = "education-headings">
+            <div class="education-block" id="high-school">
+              <h3>Jordanian Internation Schools</h3>
+              <p>Tawjihi Scientific Stream</p>
+              <p>Graduated 2017</p>
+              <span class="arrow-hint">▼</span>
+            </div>
+            <div class="education-block" id="bachelor-degree">
+              <h3>Princess Sumaya University for Technology</h3>
+              <p>Bsc Computer Science</p>
+              <p>2017 - 2021</p>
+              <!-- <p class="click-hint">Click to View More</p> -->
+              <span class="arrow-hint">▼</span>
+            </div>
+            <div class="education-block" id="master-degree">
+              <h3>University Of Manchester</h3>
+              <p>Msc Robotics</p>
+              <p>2024 - 2025</p>
+              <!-- <p class="click-hint">Click to View More</p> -->
+              <span class="arrow-hint">▼</span>
+            </div>
           </div>
-          <div class="education-block" id="bachelor-degree">
-            <h3>Bachelor's Degree</h3>
-            <p>Graduated: 2021</p>
+          <!-- Details div that will be shown or hidden -->
+          <div id="education-details" class="education-details"></div>
+        </div>
+  </section>
+
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="timeline-container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-content accordion">
+            <h3>Junior Dynamics 365 Finance and Operations Consultant</h3>
+            <h4>Digital Gates</h4>
+            <span class="date">Feb 2024 - Present</span>
+          </div>
+          <div class="panel">
+            <ul>
+              <li>Assisted in implementing and configuring Dynamics 365 Finance and Operations (D365 F&O) to streamline financial and supply chain processes for clients across various industries.</li>
+              <li>Participated in requirements gathering sessions, translating business needs into technical solutions within D365 F&O.</li>
+              <li>Configured finance modules, including General Ledger (GL), Accounts Payable (AP), Accounts Receivable (AR), Cash and Bank Management, and Fixed Assets, to optimize financial operations.</li>
+              <li>Collaborated with senior consultants and cross-functional teams to develop workflows and customize user interfaces.</li>
+              <li>Developed custom solutions by writing business logic in X++ and extending the functionality of D365 F&O apps.</li>
+              <li>Created and modified F&O app dashboards and workspaces using tools like SQL Server.</li>
+              <li>Managed and optimized application lifecycle management (ALM) processes using Azure DevOps, Lifecycle Services (LCS), and GitHub.</li>
+              <li>Ensured system security, performance optimization, and compliance with client-specific permission policies.</li>
+            </ul>
           </div>
         </div>
-        <!-- Details div that will be shown or hidden -->
-        <div id="education-details" class="education-details"></div>
-      </div>
-</section>
 
+        <div class="timeline-item">
+          <div class="timeline-content accordion">
+            <h3>Teaching Assistant</h3>
+            <h4>Al Hussein Technical University</h4>
+            <span class="date">Oct 2022 - Jul 2023</span>
+          </div>
+          <div class="panel">
+            <ul>
+              <li>Designed and implemented coursework for 5 courses, focusing on programming, database management, and web development.</li>
+              <li>Created an automated evaluation system utilized by over 70 educators, reducing workload by 50%.</li>
+              <li>Managed and mentored 225 students across various disciplines.</li>
+            </ul>        
+          </div>
+        </div>
 
-<!-- Experience Section -->
-<section id="experience">
-  <div class="timeline-container">
-    <h2>Experience</h2>
-    <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content accordion">
+            <h3>Software Development Engineering Intern</h3>
+            <h4>Amazon</h4>
+            <span class="date">Sep 2021 - Apr 2022</span>
+          </div>
+          <div class="panel">
+            <ul>
+              <li>Built backend systems for Amazon UAE’s mobile recharge website, using Java and Kotlin.</li>
+              <li>Developed solutions for troubleshooting payment errors, increasing operational efficiency.</li>
+              <li>Contributed to the launch of Amazon in two new marketplaces, integrating secure payment methods for wider user access.</li>
+              <li>Gained knowledge of cloud infrastructure and deployment in large-scale web environments.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content accordion">
+            <h3>Robotics Trainer</h3>
+            <h4>National Institute for Robotics and Technology</h4>
+            <span class="date">Nov 2018 - Feb 2022</span>
+          </div>
+          <div class="panel">
+            <ul>
+              <li>Developed and led a curriculum on robotics and programming, training over 150 students in advanced electronics and AI concepts.</li>
+              <li>Supervised teams participating in national and international robotics competitions.</li>
+              <li>Collaborated on the development and maintenance of the institute’s commercial website.</li>
+            </ul>
+          </div>
+        </div>
+        
+
+        <div class="timeline-item">
+          <div class="timeline-content accordion">
+            <h3>Website Development Intern</h3>
+            <h4>Jordan Open Source Association</h4>
+            <span class="date">Aug 2020 - Oct 2020</span>
+          </div>
+          <div class="panel">
+            <ul>
+              <li>Designed and implemented front-end interfaces for a digital safety platform using HTML, Tailwind CSS, and NUXT.js.</li>
+              <li>Conducted user testing and feedback analysis to enhance UI/UX which improved overall user satisfaction.</li>
+              <li>Worked in a collaborative open-source environment, enhancing knowledge of digital privacy frameworks.</li>
+            </ul>
+          </div>
+        </div>
       
-      <div class="timeline-item">
-        <div class="timeline-content accordion">
-          <h3>Junior Dynamics 365 Finance and Operations Consultant</h3>
-          <h4>Digital Gates</h4>
-          <span class="date">Feb 2024 - Present</span>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>Assisted in implementing and configuring Dynamics 365 Finance and Operations (D365 F&O) to streamline financial and supply chain processes for clients across various industries.</li>
-            <li>Participated in requirements gathering sessions, translating business needs into technical solutions within D365 F&O.</li>
-            <li>Configured finance modules, including General Ledger (GL), Accounts Payable (AP), Accounts Receivable (AR), Cash and Bank Management, and Fixed Assets, to optimize financial operations.</li>
-            <li>Collaborated with senior consultants and cross-functional teams to develop workflows and customize user interfaces.</li>
-            <li>Developed custom solutions by writing business logic in X++ and extending the functionality of D365 F&O apps.</li>
-            <li>Created and modified F&O app dashboards and workspaces using tools like SQL Server.</li>
-            <li>Managed and optimized application lifecycle management (ALM) processes using Azure DevOps, Lifecycle Services (LCS), and GitHub.</li>
-            <li>Ensured system security, performance optimization, and compliance with client-specific permission policies.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content accordion">
-          <h3>Teaching Assistant</h3>
-          <h4>Al Hussein Technical University</h4>
-          <span class="date">Oct 2022 - Jul 2023</span>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>Designed and implemented coursework for 5 courses, focusing on programming, database management, and web development.</li>
-            <li>Created an automated evaluation system utilized by over 70 educators, reducing workload by 50%.</li>
-            <li>Managed and mentored 225 students across various disciplines.</li>
-          </ul>        
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content accordion">
-          <h3>Software Development Engineering Intern</h3>
-          <h4>Amazon</h4>
-          <span class="date">Sep 2021 - Apr 2022</span>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>Built backend systems for Amazon UAE’s mobile recharge website, using Java and Kotlin.</li>
-            <li>Developed solutions for troubleshooting payment errors, increasing operational efficiency.</li>
-            <li>Contributed to the launch of Amazon in two new marketplaces, integrating secure payment methods for wider user access.</li>
-            <li>Gained knowledge of cloud infrastructure and deployment in large-scale web environments.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-content accordion">
-          <h3>Robotics Trainer</h3>
-          <h4>National Institute for Robotics and Technology</h4>
-          <span class="date">Nov 2018 - Feb 2022</span>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>Developed and led a curriculum on robotics and programming, training over 150 students in advanced electronics and AI concepts.</li>
-            <li>Supervised teams participating in national and international robotics competitions.</li>
-            <li>Collaborated on the development and maintenance of the institute’s commercial website.</li>
-          </ul>
-        </div>
-      </div>
-      
-
-      <div class="timeline-item">
-        <div class="timeline-content accordion">
-          <h3>Website Development Intern</h3>
-          <h4>Jordan Open Source Association</h4>
-          <span class="date">Aug 2020 - Oct 2020</span>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>Designed and implemented front-end interfaces for a digital safety platform using HTML, Tailwind CSS, and NUXT.js.</li>
-            <li>Conducted user testing and feedback analysis to enhance UI/UX which improved overall user satisfaction.</li>
-            <li>Worked in a collaborative open-source environment, enhancing knowledge of digital privacy frameworks.</li>
-          </ul>
-        </div>
-      </div>
-    
-  </div>
-</section>
-
-<!-- Carer Objectives Section -->
-<section id="career">
-  <div class="career-container">
-    <div class="career-text">
-      <h2>Career Objectives and Research Interests</h2>
-      <p>
-        I aim to leverage my extensive background in software development, artificial intelligence, and robotics to drive innovation in the tech industry. 
-        My primary career objective is to develop advanced solutions that optimize business processes, enhance automation, and improve user experiences, 
-        particularly in the areas of data analysis, AI-driven applications, and enterprise resource planning (ERP) systems.
-      </p>
-      <br>
-      <p>
-        I am particularly interested in the intersection of artificial intelligence and automation within real-world applications, such as speech recognition 
-        and robotics, and how they can be integrated into business operations through platforms like Dynamics 365. My research interests also focus on deep 
-        learning, human-robot interaction, and the development of smart systems that can automate complex tasks. I am passionate about continuing to explore 
-        how AI and robotics can be used to solve critical challenges in industries such as finance, healthcare, and education.
-      </p>
-      <br>
-      <p>
-        I seek opportunities where I can contribute to impactful projects, collaborate with cross-functional teams, and continue advancing my skills in areas 
-        such as AI, robotics, and ERP systems to help create cutting-edge technological solutions. This is my passion, and I strive to reach it wheather through
-        industry or academia and research.
-      </p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Carer Objectives Section -->
+  <section id="career">
+    <div class="career-container">
+      <div class="career-text">
+        <h2>Career Objectives and Research Interests</h2>
+        <p>
+          I aim to leverage my extensive background in software development, artificial intelligence, and robotics to drive innovation in the tech industry. 
+          My primary career objective is to develop advanced solutions that optimize business processes, enhance automation, and improve user experiences, 
+          particularly in the areas of data analysis, AI-driven applications, and enterprise resource planning (ERP) systems.
+        </p>
+        <br>
+        <p>
+          I am particularly interested in the intersection of artificial intelligence and automation within real-world applications, such as speech recognition 
+          and robotics, and how they can be integrated into business operations through platforms like Dynamics 365. My research interests also focus on deep 
+          learning, human-robot interaction, and the development of smart systems that can automate complex tasks. I am passionate about continuing to explore 
+          how AI and robotics can be used to solve critical challenges in industries such as finance, healthcare, and education.
+        </p>
+        <br>
+        <p>
+          I seek opportunities where I can contribute to impactful projects, collaborate with cross-functional teams, and continue advancing my skills in areas 
+          such as AI, robotics, and ERP systems to help create cutting-edge technological solutions. This is my passion, and I strive to reach it whether through
+          industry or academia and research.
+        </p>
+      </div>
+    </div>
+  </section>
 
 
-<!-- Skills Section -->
-<section id="skills">
-  <h2>Skills and Abilities</h2>
-  <div class="skill-meters">
-    <div class="skill">
-      <h3 for="programming">Programming Languages</h3>
-      <div class="meter" data-skill="90">
-        <div class="fill"></div>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills and Abilities</h2>
+    <div class="skill-meters">
+      <div class="skill">
+        <h3 for="programming">Programming Languages</h3>
+        <div class="meter" data-skill="90">
+          <div class="fill"></div>
+        </div>
+        <p>Proficient in designing and developing complex software systems across multiple languages: C, C++, C#, Python, Java, Kotlin, X++</p>
       </div>
-      <p>Proficient in designing and developing complex software systems across multiple languages: C, C++, C#, Python, Java, Kotlin, X++</p>
-    </div>
-    <div class="skill">
-      <h3 for="web-dev">Web Development</h3>
-      <div class="meter" data-skill="85">
-        <div class="fill"></div>
+      <div class="skill">
+        <h3 for="web-dev">Web Development</h3>
+        <div class="meter" data-skill="85">
+          <div class="fill"></div>
+        </div>
+        <p>Developed front-end interfaces for responsive websites and applications using HTML, CSS, JavaScript, Vue.js, NUXT.js, Tailwind CSS</p>
       </div>
-      <p>Developed front-end interfaces for responsive websites and applications using HTML, CSS, JavaScript, Vue.js, NUXT.js, Tailwind CSS</p>
-    </div>
-    <div class="skill">
-      <h3 for="backend-dev">Backend Development</h3>
-      <div class="meter" data-skill="80">
-        <div class="fill"></div>
+      <div class="skill">
+        <h3 for="backend-dev">Backend Development</h3>
+        <div class="meter" data-skill="80">
+          <div class="fill"></div>
+        </div>
+        <p>Skilled in database design and management with PHP, SQL, and SQL Server</p>
       </div>
-      <p>Skilled in database design and management with PHP, SQL, and SQL Server</p>
-    </div>
-    <div class="skill">
-      <h3 for="integration">Integration and APIs</h3>
-      <div class="meter" data-skill="75">
-        <div class="fill"></div>
+      <div class="skill">
+        <h3 for="integration">Integration and APIs</h3>
+        <div class="meter" data-skill="70">
+          <div class="fill"></div>
+        </div>
+        <p>Familiar with development tools like Visual Studio, Postman, PyCharm, and GitHub for version control and collaboration</p>
       </div>
-      <p>Familiar with development tools like Visual Studio, Postman, PyCharm, and GitHub for version control and collaboration</p>
-    </div>
-    <div class="skill">
-      <h3 for="dynamics365">Dynamics 365</h3>
-      <div class="meter" data-skill="70">
-        <div class="fill"></div>
+      <div class="skill">
+        <h3 for="dynamics365">Dynamics 365</h3>
+        <div class="meter" data-skill="70">
+          <div class="fill"></div>
+        </div>
+        <p>Proficient in D365 Finance and Operations, including various modules and integrations.</p>
       </div>
-      <p>Proficient in D365 Finance and Operations, including various modules and integrations.</p>
-    </div>
-    <div class="skill">
-      <h3 for="project-mgmt">Project Management</h3>
-      <div class="meter" data-skill="70">
-        <div class="fill"></div>
+      <div class="skill">
+        <h3 for="project-mgmt">Project Management</h3>
+        <div class="meter" data-skill="90">
+          <div class="fill"></div>
+        </div>
+        <p>Knowledge of Delivery Management methodologies (e.g., Scrum, Agile) and tools like Azure DevOps.</p>
       </div>
-      <p>Knowledge of Delivery Management methodologies (e.g., Scrum, Agile) and tools like Azure DevOps.</p>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <!-- Projects -->
 <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <div class="project-card">
-        <div class="proj-img-div">
-              <img src="Images/firefighter.png" alt="Firefighting Robot" class="project-image left">
-        </div>
-        <div class="project-text">
-            <h3><a href="https://www.facebook.com/events/university-of-jordan/ieee-ras-portal-firefighting-competition-i/384083625504106/">Firefighting Robot</a></h3>
-            <p>Developed a robot using an Arduino controller and electrical wiring designed to assist in fire emergency situations. This robot participated in the IEEE Firefighter Competition, demonstrating its capability to navigate hazardous environments and execute firefighting tasks effectively.</p>
-        </div>
-    </div>
+  <div class="projects-grid">
+      <div class="project-card">
+          <img src="Images/firefighter.png" alt="Firefighting Robot" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://www.facebook.com/events/university-of-jordan/ieee-ras-portal-firefighting-competition-i/384083625504106/" target="_blank">Firefighting Robot</a></h3>
+              <p><strong>Overview:</strong> Developed an Arduino-controlled robot designed to assist in fire emergency situations.</p>
+              <p><strong>Goals:</strong> The robot aimed to navigate hazardous environments and execute firefighting tasks effectively.</p>
+              <p><strong>My Contribution:</strong> Implemented the electrical wiring and programming, learning about sensor integration and autonomous navigation.</p>
+          </div>
+      </div>
 
-    <div class="project-card">
-      <div class="proj-img-div">
-        <img src="Images/EV3.png" alt="Balancing Robot" class="project-image right">
-        </div>
-        <div class="project-text">
-            <h3><a href="https://www.lego.com/en-gb/product/lego-mindstorms-ev3-31313"> Robot</a></h3>
-            <p>Created a robot using the LEGO Mindstorms EV3 kit aimed at promoting interest in robotics. This robot balances on a rope and attempts to drop a ball into a cup, serving as a tool to enhance accuracy and coordination skills for the operator.</p>
-        </div>
-    </div>
+      <div class="project-card">
+          <img src="Images/EV3.png" alt="Balancing Robot" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://www.lego.com/en-gb/product/lego-mindstorms-ev3-31313" target="_blank">Balancing Robot</a></h3>
+              <p><strong>Overview:</strong> A LEGO Mindstorms EV3 robot designed to balance on a rope and drop a ball into a cup.</p>
+              <p><strong>Goals:</strong> Enhance coordination skills and promote interest in robotics.</p>
+              <p><strong>My Contribution:</strong> Developed the control algorithms, improving my understanding of stability and motor control.</p>
+          </div>
+      </div>
 
-    <div class="project-card">
-      <div class="proj-img-div">
-        <img src="Images/eggColoring.jpg" alt="Easter Egg Coloring Robot" class="project-image left">
-        </div>
-        <div class="project-text">
-            <h3>Easter Egg Coloring Robot</h3>
-            <p>Engineered an egg-coloring robot as a themed activity for Easter. This project showcased creativity and technical skills, enabling efficient and colorful decoration of eggs for the holiday celebration.</p>
-        </div>
-    </div>
+      <div class="project-card">
+          <img src="Images/eggColoring.jpg" alt="Easter Egg Coloring Robot" class="project-image">
+          <div class="project-content">
+              <h3>Easter Egg Coloring Robot</h3>
+              <p><strong>Overview:</strong> A robot designed to automate the process of coloring Easter eggs.</p>
+              <p><strong>Goals:</strong> Enhance creativity and efficiency in holiday-themed activities.</p>
+              <p><strong>My Contribution:</strong> Designed the mechanism and programmed the movement patterns, improving my skills in precision control.</p>
+          </div>
+      </div>
 
-    <div class="project-card">
-      <div class="proj-img-div">
-        <img src="Images/FLL.jpeg" alt="Self-Driving Robot" class="project-image right">
-        </div>
-        <div class="project-text">
-            <h3><a href="https://www.firstlegoleague.org/"> Robot for National Robotics Competition </a></h3>
-            <p>Designed and built a self-driving robot for the National Robotics Competition. This robot utilized advanced sensors and programming techniques to navigate autonomously, completing tasks and challenges set by the competition.</p>
-        </div>
-    </div>
+      <div class="project-card">
+          <img src="Images/FLL.jpeg" alt="Self-Driving Robot" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://www.firstlegoleague.org/" target="_blank">National Robotics Competition Robot</a></h3>
+              <p><strong>Overview:</strong> A self-driving robot designed for a robotics competition.</p>
+              <p><strong>Goals:</strong> Successfully complete autonomous navigation challenges.</p>
+              <p><strong>My Contribution:</strong> Programmed navigation algorithms, gaining experience in sensor fusion and path planning.</p>
+          </div>
+      </div>
 
-    <div class="project-card">
-      <div class="proj-img-div">
-        <img src="Images/GradProj3.png" alt="Speech to Sign Language Interpreter" class="project-image left">
-        </div>
-        <div class="project-text">
-            <h3><a href="https://www.youtube.com/live/JN1KeUAfypA?si=EZyTDKVo_t79zyGO"> Speech to Sign Language Interpreter System</a></h3>
-            <p>Developed a Speech to Sign Language Interpreter System that translates spoken language into sign language gestures. This project aimed to bridge communication gaps for the hearing-impaired community, utilizing machine learning algorithms for accurate translation.</p>
-        </div>
-    </div>
-</section>
+      <div class="project-card">
+          <img src="Images/GradProj3.png" alt="Speech to Sign Language Interpreter" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://www.youtube.com/live/JN1KeUAfypA?si=EZyTDKVo_t79zyGO" target="_blank">Speech to Sign Language Interpreter</a></h3>
+              <p><strong>Overview:</strong> A system that translates spoken language into sign language gestures.</p>
+              <p><strong>Goals:</strong> Bridge communication gaps for the hearing-impaired community.</p>
+              <p><strong>My Contribution:</strong> Developed machine learning models for translation, deepening my knowledge of AI and linguistics.</p>
+          </div>
+      </div>
 
+      <div class="project-card">
+          <img src="Images/leo-rover.png" alt="Leo Rover Group Project" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://github.com/judebarakat99/Team1Repository.git" target="_blank">Leo Rover Project</a></h3>
+              <p><strong>Overview:</strong> Developed an object retrieval robotic system using Leo Rover and Trossen PincherX 150 manipulator, combined with autonomous navigation capabilities.</p>
+              <p><strong>Goals:</strong> Enable the robot to autonomously navigate using RPLidar, SLAM Toolbox, and Nav2, while utilizing a manipulator for object retrieval in unknown environments.</p>
+              <p><strong>My Contribution:</strong> Designed the navigation and mapping algorithms in ROS2, integrating sensors such as LiDAR and IMU for accurate localization and path planning. I also worked on the manipulator control system to pick and place objects accurately.</p>
+          </div>
+      </div>
 
+      <div class="project-card">
+          <img src="Images/binary_decoder.png" alt="Binary Decoder" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://github.com/judebarakat99/Binary-Decoder.git" target="_blank">Binary Decoder</a></h3>
+              <p><strong>Overview:</strong> A Python3 script that decodes encoded binary data files into human-readable values using a serial message protocol.</p>
+              <p><strong>Goals:</strong> Enable users to decode binary data files with ease and interpret them in a human-readable format.</p>
+              <p><strong>My Contribution:</strong> Developed the script, improving my skills in file handling, data encoding/decoding, and serial communication protocols.</p>
+          </div>
+      </div>
 
-<!-- Awards and Achievements Section -->
-<section id="awards">
-  <h2>Awards and Achievements</h2>
-  <div class="awards-container">
-    <div class="award-card" id="princess-sumaya-award" data-details="Honored with this prestigious award from HRH Princess Sumaya Al Hassan during my graduation at Princess Sumaya University for Technology, recognizing my exceptional academic performance and contributions to extracurricular activities (2022).">
-      <div class="award-icon award-princess-sumaya">🏆</div>
-      <h3>Princess Sumaya Award For The Most Outstanding Student</h3>
-    </div>
-    <div class="award-card" id="youngest-speaker-award" data-details="Delivered a presentation on robotics and AI, contributing to discussions on emerging AI trends and sharing insights with leading researchers and practitioners at the University of Jordan (2019).">
-      <div class="award-icon award-youngest-speaker">🎤</div>
-      <h3>Youngest Speaker at IEEE AI Conference</h3>
-    </div>
-    <div class="award-card" id="ieee-firefighter-award" data-details="Developed an innovative firefighting robot with my team, which won first place in the national university level IEEE competition, that challenged participants to create functional robotic solutions for fire fighting scenarios (2019).">
-      <div class="award-icon award-ieee-firefighter">🔥</div>
-      <h3>IEEE Fire Fighter Competition</h3>
-    </div>
-    <div class="award-card" id="ahli-fintech-award" data-details="Designed a fintech solution using secure payment via hand band, securing a spot among the finalists and demonstrating innovative problem-solving skills in a competitive environment (2018).">
-      <div class="award-icon award-ahli-fintech">💳</div>
-      <h3>Ahli Fintech Hackathon Finalist</h3>
-    </div>
-    <div class="award-card" id="fll-regional-award" data-details="Successfully trained a team of 10 female students (aged 12-17) with no prior programming or robotics experience, leading them to win first place in mechanical design at the Middle Eastern Regional Robotics Competition (First Lego League Arabia) (2018).">
-      <div class="award-icon award-fll-regional">🤖</div>
-      <h3>First Lego League Middle Eastern Regional Robotics Competition</h3>
-    </div>
-    <div class="award-card" id="programming-award" data-details="Earned first place in the programming category at the 11th national robotics competition (First Lego League) for programming a self-driving robot utilizing PID control techniques (2016).">
-      <div class="award-icon award-programming">🖥️</div>
-      <h3>Programming Award at First Lego League National Robotics Competition</h3>
-    </div>
-    <div class="award-card" id="f1-for-schools-award" data-details="Established the first 'F1 for Schools' team in my school, successfully guiding the team to win the Best Research Award at the regional competition (2016).">
-      <div class="award-icon award-f1-for-schools">🏎️</div>
-      <h3>Founder of First “F1 for Schools” Team</h3>
-    </div>
-    <div class="award-card" id="jubilee-competition-award" data-details="Achieved 3rd place in the web development category at the Jubilee Innovative Design Competition for schools in the Middle East, recognized for developing a website using HTML, CSS, and JavaScript (2016).">
-      <div class="award-icon award-jubilee-competition">🌐</div>
-      <h3>Jubilee Innovative Design Competition</h3>
-    </div>
-  </div>
-  <div class="award-description" id="award-description"></div>
-</section>
+      <div class="project-card">
+          <img src="Images/Astar.png" alt="A Star Algorithm" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://github.com/judebarakat99/A-Star-Algorithm.git" target="_blank">A* Algorithm Visualization</a></h3>
+              <p><strong>Overview:</strong> A GUI-based implementation of the A* pathfinding algorithm.</p>
+              <p><strong>Goals:</strong> Allow users to visualize the shortest path computation interactively.</p>
+              <p><strong>My Contribution:</strong> Implemented the algorithm in Python and designed the GUI, reinforcing my knowledge of graph search techniques.</p>
+          </div>
+      </div>
 
+      <div class="project-card">
+          <img src="Images/navigation.png" alt="Simulating Robots in ROS & Gazebo" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://github.com/judebarakat99/Team1Repository/tree/main/Navigation" target="_blank">Simulating Robots in ROS & Gazebo</a></h3>
+              <p><strong>Overview:</strong> This project involved developing a detailed simulation of a robotic vacuum using Gazebo, integrated with ROS to ensure functionality and realism.</p>
+              <p><strong>Goals:</strong> Design and configure a URDF file representing the robot’s physical and functional characteristics, integrate sensors like a 2D LiDAR, depth camera, and IMU, and implement a differential drive mechanism for motion control.</p>
+              <p><strong>My Contribution:</strong> Engineered the robot’s motion control system, ensuring robust decision-making capabilities by managing multiple input commands using a twist_mux node.</p>
+          </div>
+      </div>
 
-<!-- Certifications and Training Section -->
-<section id="certifications">
-  <h2>Certifications and Training</h2>
-  <div id = "cards">
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Microsoft Certified: Dynamics 365 Fundamentals (ERP) (MB-920)</h3>
-            <div class="details">
-                <p><strong></strong>Completed: 2024</strong></p>
-                <p>Covers the fundamentals of Microsoft Dynamics 365 ERP solutions, including core functionalities and applications, designed for professionals looking to improve business operations.</p>
-            </div>
-        </div>
-    </div>
+      <div class="project-card">
+          <img src="Images/object_detection.png" alt="Object Detection using Intel RealSense Camera" class="project-image">
+          <div class="project-content">
+              <h3><a href="https://github.com/judebarakat99/Team1Repository/tree/main/ObjectDetection/attempt9-UsingSDK" target="_blank">Object Detection using Intel RealSense Depth Camera</a></h3>
+              <p><strong>Overview:</strong> Utilized an Intel RealSense Depth Camera for object detection to identify colored blocks, their shapes, and distances from the camera.</p>
+              <p><strong>Goals:</strong> Implement a vision system capable of detecting and classifying objects in 3D space, providing real-time feedback to enhance robotic decision-making.</p>
+              <p><strong>My Contribution:</strong> Integrated the camera with ROS and programmed the object detection algorithms, learning about depth perception and machine vision techniques.</p>
+          </div>
+      </div>
 
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Amazon Campus Mentorship Series</h3>
-            <div class="details">
-                <p><strong>Completed: 2021</strong></p>
-                <p>A 6-month intensive program enhancing skills in software development and cloud computing, gaining insights from industry professionals and expanding my professional network.</p>
-            </div>
-        </div>
-    </div>
+      <div class="project-card">
+          <img src="Images/Drone.png" alt="PID Controller" class="project-image">
+          <div class="project-content">
+              <h3> <a href= "https://github.com/judebarakat99/Unmanned-Aerial-System.git" target = "_blank">PID Controller for Drone Stabilization</a></h3>
+              <p><strong>Overview:</strong> A collaborative project to develop a Python-based PID feedback control algorithm for stabilizing the position of a Unmanned Aerial System (UAS).</p>
+              <p><strong>Goals:</strong> Implement a 3-layer PID control system to control the drone both in simulation and in real life, ensuring stable flight even under varying conditions.</p>
+              <p><strong>My Contribution:</strong> Contributed to the design of the control system and the tuning of PID parameters, enhancing my understanding of control systems and flight dynamics.</p>
+          </div>
+      </div>
 
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Microsoft Skills Lab AI Apprenticeship</h3>
-            <div class="details">
-                <p><strong>Completed: 2021</strong></p>
-                <p>Selected from a competitive pool of 40 applicants for a prestigious apprenticeship focused on Artificial Intelligence, developing advanced AI projects and collaborating with experts in the field.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
-            <div class="details">
-                <p><strong>Completed: 2021</strong></p>
-                <p>Introduces core concepts, services, security, and compliance of Microsoft Azure, equipping participants with essential knowledge about its functionality and value.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Certified Ethical Hacker (CEH)</h3>
-            <div class="details">
-                <p><strong>Completed: 2021</strong></p>
-                <p>Focuses on ethical hacking techniques and tools, teaching participants to identify vulnerabilities in systems and networks to enhance skills in penetration testing and cybersecurity.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Cisco Certified Network Associate (CCNA)</h3>
-            <div class="details">
-                <p><strong>Completed: 2020</strong></p>
-                <p>Validates skills in managing and troubleshooting networks, covering key concepts such as IP addressing, routing, switching, and security.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="certification-card">
-        <div class="card-content">
-            <h3>Accredited Robotics Competitions Judge Training</h3>
-            <div class="details">
-                <p><strong>Completed: 2018</strong></p>
-                <p>Prepares individuals to judge robotics competitions, focusing on evaluation criteria and best practices to provide fair and constructive feedback.</p>
-            </div>
-        </div>
-    </div>
   </div>
 </section>
 
+  <!-- Awards and Achievements Section -->
+  <section id="awards">
+    <h2>Awards and Achievements</h2>
+    <div class="awards-container">
+
+        <div class="award-card">
+            <div class="award-icon award-princess-sumaya">🏆</div>
+            <h3>Princess Sumaya Award For The Most Outstanding Student</h3>
+            <span class="award-description">Honored with this prestigious award from HRH Princess Sumaya Al Hassan during my graduation at Princess Sumaya University for Technology, recognizing my exceptional academic performance and contributions to extracurricular activities (2022).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-youngest-speaker">🎤</div>
+            <h3>Youngest Speaker at IEEE AI Conference</h3>
+            <span class="award-description">Delivered a presentation on robotics and AI, contributing to discussions on emerging AI trends and sharing insights with leading researchers and practitioners at the University of Jordan (2019).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-ieee-firefighter">🔥</div>
+            <h3>IEEE Fire Fighter Competition</h3>
+            <span class="award-description">Developed an innovative firefighting robot with my team, which won first place in the national university level IEEE competition, that challenged participants to create functional robotic solutions for fire fighting scenarios (2019).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-ahli-fintech">💳</div>
+            <h3>Ahli Fintech Hackathon Finalist</h3>
+            <span class="award-description">Designed a fintech solution using secure payment via hand band, securing a spot among the finalists and demonstrating innovative problem-solving skills in a competitive environment (2018).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-fll-regional">🤖</div>
+            <h3>First Lego League Middle Eastern Regional Robotics Competition</h3>
+            <span class="award-description">Successfully trained a team of 10 female students (aged 12-17) with no prior programming or robotics experience, leading them to win first place in mechanical design at the Middle Eastern Regional Robotics Competition (First Lego League Arabia) (2018).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-programming">🖥️</div>
+            <h3>Programming Award at First Lego League National Robotics Competition</h3>
+            <span class="award-description">Earned first place in the programming category at the 11th national robotics competition (First Lego League) for programming a self-driving robot utilizing PID control techniques (2016).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-f1-for-schools">🏎️</div>
+            <h3>Founder of First “F1 for Schools” Team</h3>
+            <span class="award-description">Established the first 'F1 for Schools' team in my school, successfully guiding the team to win the Best Research Award at the regional competition (2016).</span>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon award-jubilee-competition">🌐</div>
+            <h3>Jubilee Innovative Design Competition</h3>
+            <span class="award-description">Achieved 3rd place in the web development category at the Jubilee Innovative Design Competition for schools in the Middle East, recognized for developing a website using HTML, CSS, and JavaScript (2016).</span>
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- Certifications and Training Section -->
+  <section id="certifications">
+    <h2>Certifications and Training</h2>
+    <div id = "cards">
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Microsoft Certified: Dynamics 365 Fundamentals (ERP) (MB-920)</h3>
+              <div class="details">
+                  <p><strong></strong>Completed: 2024</strong></p>
+                  <p>Covers the fundamentals of Microsoft Dynamics 365 ERP solutions, including core functionalities and applications, designed for professionals looking to improve business operations.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Amazon Campus Mentorship Series</h3>
+              <div class="details">
+                  <p><strong>Completed: 2021</strong></p>
+                  <p>A 6-month intensive program enhancing skills in software development and cloud computing, gaining insights from industry professionals and expanding my professional network.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Microsoft Skills Lab AI Apprenticeship</h3>
+              <div class="details">
+                  <p><strong>Completed: 2021</strong></p>
+                  <p>Selected from a competitive pool of 40 applicants for a prestigious apprenticeship focused on Artificial Intelligence, developing advanced AI projects and collaborating with experts in the field.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+              <div class="details">
+                  <p><strong>Completed: 2021</strong></p>
+                  <p>Introduces core concepts, services, security, and compliance of Microsoft Azure, equipping participants with essential knowledge about its functionality and value.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Certified Ethical Hacker (CEH)</h3>
+              <div class="details">
+                  <p><strong>Completed: 2021</strong></p>
+                  <p>Focuses on ethical hacking techniques and tools, teaching participants to identify vulnerabilities in systems and networks to enhance skills in penetration testing and cybersecurity.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Cisco Certified Network Associate (CCNA)</h3>
+              <div class="details">
+                  <p><strong>Completed: 2020</strong></p>
+                  <p>Validates skills in managing and troubleshooting networks, covering key concepts such as IP addressing, routing, switching, and security.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="certification-card">
+          <div class="card-content">
+              <h3>Accredited Robotics Competitions Judge Training</h3>
+              <div class="details">
+                  <p><strong>Completed: 2018</strong></p>
+                  <p>Prepares individuals to judge robotics competitions, focusing on evaluation criteria and best practices to provide fair and constructive feedback.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Contact Me Section -->
@@ -427,10 +521,9 @@
         Email me at: <strong><a href="mailto:jude.barakat@outlook.com">jude.barakat@outlook.com</a></strong>
       </p>
       <p>
-        Linked in: <strong><a href="https://www.linkedin.com/in/judebarakat99?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">judebarakat99</a></strong>
-      </p>
+        Linked in: <strong><a href="https://www.linkedin.com/in/judebarakat99?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">judebarakat99</a></strong>      </p>
       <p>
-        GitHub: <strong><a href="https://github.com/judebarakat99">judebarakat</a></strong>
+        GitHub: <strong><a href="https://github.com/judebarakat99" target="_blank">judebarakat</a></strong>
       </p>
     </div>
   </section>

@@ -16,6 +16,7 @@
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
   
   .award-card:hover {
@@ -73,3 +74,34 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
+
+.award-card h3,
+.award-icon {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.award-card:hover h3,
+.award-card:hover .award-icon {
+    opacity: 0; /* Hide original content on hover */
+}
+
+/* Description Styling (Appears on Hover) */
+.award-description {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.award-card:hover .award-description {
+    display: block; /* Show description on hover */
+}
+
